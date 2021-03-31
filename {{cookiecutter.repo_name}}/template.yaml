@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wizeline-django-component
+  description: Component django test from Wizeline
+  labels:
+    system: demo-wizeline
+  annotations:
+    example.com/service-discovery: wizeline
+    circleci.com/project-slug: github/example-org/Wizeline
+  tags:
+    - django
+    - python
+    - docker
+spec:
+  type: website
+  lifecycle: production
+  owner: wizeline-backstage-team
