@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: wize-demo-django-docker
+  title: Demo django dcoker template
+  description: Create a Django project from Backstage powered with docker
+  tags:
+    - demo
+    - django
+    - android
+    - docker
+spec:
+  owner: wizeline-backstage-team
+  templater: cookiecutter
+  type: service
+  path: '.'
+  schema:
+    required:
+      - component_id
+      - repo_name
+      - description
+    properties:
+      component_id:
+        title: Name
+        type: string
+        description: Unique name of the component
+      repo_name:
+        title: Repository
+        type: string
+        description: Repo name of the component
+      description:
+        title: Description
+        type: string
+        description: Description of the component
